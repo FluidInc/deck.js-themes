@@ -1,0 +1,204 @@
+// Theme variables
+$blue: #27bbd1;
+$black: #333;
+
+// Theme styles
+.deck-container {
+	color:$black;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:500;
+//	font-size:1.25em;
+	background:#fff;
+	
+	.slide {
+		background:#fff;
+	//	overflow:auto;
+	//	height:100%;
+	}
+	
+	h1, h2, h3, h4, h5 {
+		font-weight:normal;
+		border-top:8px solid $black;
+		border-bottom:1px solid $black;
+		text-transform:uppercase;
+	}
+
+	h1 {
+		min-height:215px;
+
+		span {
+			font-size:.7em;
+			display:block;
+		}
+	}
+
+	h2 {
+		font-size:2.5em;
+		min-height:120px;
+		margin-top:1em;
+	}
+
+	h3, h4 {
+		margin-top:1.5em;
+		margin-bottom:.5em;
+		padding-bottom:.5em;
+	}
+
+	h3 {
+		font-size:1.7em;
+		border-top:0;
+	}
+
+	h4 {
+		color:$blue;
+		padding-top:1em;
+		border-bottom:0;
+	}
+
+	p {
+		&.highlight {
+			font-weight:bold;
+			color:#e74018;
+		}
+	}
+
+	pre {
+		border-color:#ccc;
+	}
+
+	code {
+		color:#888;
+	}
+
+	blockquote {
+		font-size:2em;
+		font-style:italic;
+		padding:1em 2em;
+		color:#000;
+		border-left:5px solid #ccc;
+
+		p {
+			margin:0;
+		}
+
+		cite {
+			font-size:.4em;
+			font-style:normal;
+			color:$blue;
+			text-transform:uppercase;
+
+			&:before {
+				content:"-";
+				margin:4px;
+			}
+		}
+	}
+
+	::-moz-selection{ background:$blue; color:#fff; }
+	::selection { background:$blue; color:#fff; }
+
+	a {
+		&, &:hover, &:focus, &:active, &:visited {
+			color:$blue;
+			text-decoration:none;
+		}
+		
+		&:hover, &:focus {
+			text-decoration:underline;
+		}
+	}
+
+
+	li {
+		p {
+			margin-bottom:0.5em;
+		}
+
+		&:last-child {
+			padding-bottom:0;
+		}
+	}
+
+	.deck-prev-link, .deck-next-link {
+		background:#ccc;
+		font-family:serif; // sans-serif arrows x-browser fail
+
+		&, &:hover, &:focus, &:active, &:visited {
+			color:#fff;
+		}
+
+		&:hover, &:focus {
+			background:$blue;
+			text-decoration:none;
+		}
+	}
+
+	.deck-status {
+		font-size:0.6666em;
+	}
+
+	&.deck-menu {
+		.slide {
+			background:#eee;
+		}
+
+		.deck-current, .no-touch & .slide:hover {
+			background:#fcff98;
+		}
+	}
+}
+
+// Two-column support
+.deck-container {
+	.left {
+		margin-left:0;
+	}
+
+	.right {
+		margin-left:auto;
+		margin-right:0;
+	}
+
+	.two-columns {
+		overflow:auto;
+
+		.column {
+			width:50%;
+
+			h4 {
+				margin-top:0.7em;
+			}
+		}
+		.left {
+			float:left;
+		}
+		.right {
+			float:right;
+		}
+		.span {
+			float:none;
+			clear:both;
+		}
+	}
+}
+
+// Core overrides
+/*
+body.deck-container {
+	overflow:hidden;
+}
+*/
+
+// Transition overrides
+.csstransitions.csstransforms {
+	.deck-container:not(.deck-menu) {
+		> .slide {
+			padding:0 68px;
+
+			.deck-previous {
+				/* opacity: 1; */
+				display:none;
+			}
+		}
+	}
+}
