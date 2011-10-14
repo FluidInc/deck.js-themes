@@ -1,0 +1,93 @@
+## PROJECT FILES
+htdocs/ecom/js/ecom.js
+htdocs/ecom/css/common/ecom.css
+htdocs/ecom/css/en_CA/ecom.en_CA.css
+htdocs/ecom/css/fr_CA/ecom.fr_CA.css
+
+
+## RANDOM HIDDEN FILES
+###### https://github.com/github/gitignore
+
+
+## OSX.gitignore
+# Finder
+.DS_Store?
+Icon?
+# Thumbnails
+._*
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+## Windows.gitignore
+# Thumbnail cache
+thumbs.db
+# Folder config
+Desktop.ini
+
+## Linux.gitignore
+.*
+*~
+*.swp
+# KDE
+.directory
+
+## Vi.gitignore
+*.swp
+*.swo
+
+## vim.gitignore
+.*.sw[on]
+*.un~
+
+## Emacs.gitignore
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+
+## Eclipse.gitignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+## TextMate.gitignore
+*.tmproj
+*.tmproject
+tmtags
+
+# Redcar.gitignore
+.redcar
+
+## Dreamweaver.gitignore
+_notes
+dwsync.xml
+
+## SVN.gitignore
+/.svn/*
+*/.svn/*
+
+## HG.gitignore
+.hgignore
+.hgtags
+.hg
+
+## CVS.gitignore
+/CVS/*
+*/CVS/*
+.cvsignore
+*/.cvsignore
